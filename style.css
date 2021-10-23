@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --text-color: hsl(240, 9%, 89%);
+  --background-color: hsl(240, 6%, 13%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--background-color);
+}
+
+main {
+  background: url(assets/fotos/Mobile.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+.avatar {
+  width: 10rem;
+  object-fit: cover;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -40px;
+  height: 15rem;
+  width: 5rem;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+ul li a img:hover {
+  transition: 0.2s;
+  transform: translateY(-8px);
+}
